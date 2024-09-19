@@ -39,7 +39,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          npm ci
           npm run release
 
       # NEXT, THERE SHOULD AN ACTUAL DEPLOYMENT JOB
