@@ -1,4 +1,4 @@
-name: commitlint
+name: Run commitlint
 concurrency:
   group: ci-${{ github.ref }}-commitlint
   cancel-in-progress: true
@@ -13,6 +13,5 @@ jobs:
   lint-commit-message:
     name: Lint commit message
     runs-on: ubuntu-latest
-
     steps:
       - uses: ahmadnassri/action-commit-lint@v1

@@ -1,7 +1,7 @@
 # Based on example given in nearform repo:
 # https://github.com/nearform/actions-toolkit/blob/master/.github/workflows/check-linked-issues.yml
 #
-name: Verify Linked Issue in PR
+name: Verify Linked Issue In PR
 concurrency:
   group: ci-${{ github.ref }}-verifylinkedissue
   cancel-in-progress: true
@@ -14,6 +14,7 @@ on:
 
 jobs:
   verify-linked-issue:
+    name: Verify Linked Issue
     runs-on: ubuntu-22.04
     permissions:
       issues: read
