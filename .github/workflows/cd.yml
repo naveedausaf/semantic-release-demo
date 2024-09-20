@@ -26,7 +26,6 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-24.04
-
     name: Deploy to Production
     steps:
       - uses: actions/checkout@v3
