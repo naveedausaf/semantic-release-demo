@@ -25,7 +25,7 @@ jobs:
     # https://github.com/semantic-release/semantic-release/issues/2481
     permissions:
       contents: write
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     name: Deploy to Production
     steps:
       - uses: actions/checkout@v3
